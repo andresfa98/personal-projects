@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects I Want to Build</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Projects I Want to Build</h1>
+        <p>A simple list of ideas I want to turn into real things.</p>
+      </header>
+
+      <section class="card">
+        <h2>Add a project idea</h2>
+        <form id="project-form">
+          <label>
+            Project name
+            <input id="name" type="text" placeholder="e.g. Personal finance dashboard" required />
+          </label>
+          <label>
+            Description
+            <textarea id="description" rows="3" placeholder="What is it about?"></textarea>
+          </label>
+          <label>
+            Priority
+            <select id="priority">
+              <option value="high">High</option>
+              <option value="medium" selected>Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <button type="submit">Add project</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>My project ideas</h2>
+        <ul id="project-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
