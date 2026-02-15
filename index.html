@@ -3,44 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects I Want to Build</title>
+    <title>Andres Ferrer | AI & Software Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Andres Ferrer — projects showcasing AI workflows, coding, and product building."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
-      <header>
-        <h1>Projects I Want to Build</h1>
-        <p>A simple list of ideas I want to turn into real things.</p>
-      </header>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">AI + Software Portfolio</p>
+        <h1>Hi, I’m Andres Ferrer.</h1>
+        <p class="lead">
+          I build practical software with AI-assisted workflows: from idea to working product,
+          fast iteration, and clear results.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
 
-      <section class="card">
-        <h2>Add a project idea</h2>
-        <form id="project-form">
-          <label>
-            Project name
-            <input id="name" type="text" placeholder="e.g. Personal finance dashboard" required />
-          </label>
-          <label>
-            Description
-            <textarea id="description" rows="3" placeholder="What is it about?"></textarea>
-          </label>
-          <label>
-            Priority
-            <select id="priority">
-              <option value="high">High</option>
-              <option value="medium" selected>Medium</option>
-              <option value="low">Low</option>
-            </select>
-          </label>
-          <button type="submit">Add project</button>
-        </form>
+    <main class="container">
+      <section class="section" id="about">
+        <h2>About</h2>
+        <p>
+          I’m focused on building useful digital products and improving development speed with AI.
+          I combine product thinking, coding fundamentals, and rapid experimentation to ship real
+          features quickly.
+        </p>
       </section>
 
-      <section class="card">
-        <h2>My project ideas</h2>
-        <ul id="project-list"></ul>
+      <section class="section" id="projects">
+        <h2>Selected Projects</h2>
+
+        <article class="card">
+          <h3>Personal Projects Tracker (This Website)</h3>
+          <p class="meta">Type: Frontend Web App · Stack: HTML, CSS, JavaScript</p>
+          <p>
+            Built a lightweight project tracker page to capture ideas, prioritize them, and keep a
+            visible roadmap of what I want to build next.
+          </p>
+          <ul>
+            <li><strong>Problem:</strong> Ideas were scattered and hard to prioritize.</li>
+            <li><strong>Solution:</strong> A simple web interface with project cards and priorities.</li>
+            <li><strong>Result:</strong> Clear planning system and a public proof-of-work artifact.</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/andresfa98/personal-projects" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <span>·</span>
+            <a href="https://andresfa98.github.io/personal-projects/" target="_blank" rel="noreferrer">Live Demo</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>AI-Driven Build Workflow (Template Case Study)</h3>
+          <p class="meta">Type: Process / Engineering Workflow · Stack: Prompting, Git, Iteration</p>
+          <p>
+            Structured a repeatable workflow to translate business ideas into scoped tasks, ship a
+            first draft fast, then iterate with version control and deployment.
+          </p>
+          <ul>
+            <li><strong>Problem:</strong> Slow path from concept to publishable MVP.</li>
+            <li><strong>Solution:</strong> Small milestones, clear prompts, immediate deployment.</li>
+            <li><strong>Result:</strong> Faster delivery and stronger portfolio momentum.</li>
+          </ul>
+          <p class="note">Add your next real project here with concrete metrics.</p>
+        </article>
+      </section>
+
+      <section class="section" id="process">
+        <h2>How I Build</h2>
+        <ol class="steps">
+          <li><strong>Define:</strong> Clarify user problem and success criteria.</li>
+          <li><strong>Scope:</strong> Split into smallest shippable version.</li>
+          <li><strong>Build:</strong> Use AI + coding to prototype quickly.</li>
+          <li><strong>Test:</strong> Validate behavior and refine edge cases.</li>
+          <li><strong>Ship:</strong> Deploy, document, and iterate.</li>
+        </ol>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>I’m open to roles where I can contribute to AI-enabled product development.</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:andferrer6a@gmail.com">andferrer6a@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/andresfa98" target="_blank" rel="noreferrer">github.com/andresfa98</a></li>
+          <li>LinkedIn: <span class="muted">Add your LinkedIn URL here</span></li>
+        </ul>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> Andres Ferrer · Built with code + AI</div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
